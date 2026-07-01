@@ -1,0 +1,219 @@
+<html>
+<head>
+    <title>Books - BookNest</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Available Books</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="books.html">Books</a></li>
+            <a href="cart.html">Cart</a>
+        </nav>
+    </header>
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search books..." onkeyup="searchBooks()">
+    </div>
+
+    <section class="books">
+        <h2>📚 Educational Books</h2>
+        <div class="book">
+            <img src="edu1.jpg" alt="Book 1">
+            <h3>Introduction to Computer Science - $15</h3>
+            <button onclick="openBook('https://cs.harvard.edu/malan/publications/cs50.pdf')">Open</button>
+            <button onclick="addToCart('Introduction to Computer Science', 15)">Add to Cart</button>
+        </div>
+
+        <div class="book">
+            <img src="edu2.jpg" alt="Book 2">
+            <h3>Mathematics for Machine Learning - $14</h3>
+            <button onclick="openBook('https://mml-book.github.io/book/mml-book.pdf')">Open</button>
+            <button onclick="addToCart('Mathematics for Machine Learning', 20)">Add to Cart</button>
+        </div>
+
+        <div class="book">
+            <img src="edu3.jpg" alt="Book 3">
+            <h3>Physics for Scientists and Engineers - $12</h3>
+            <button onclick="openBook('https://www.feynmanlectures.caltech.edu/')">Open</button>
+            <button onclick="addToCart('Physics for Scientists and Engineers', 18)">Add to Cart</button>
+        </div>
+
+        <div class="book">
+            <img src="edu4.jpg" alt="Book 4">
+            <h3>Artificial Intelligence: A Modern Approach - $16</h3>
+            <button onclick="openBook('https://aima.cs.berkeley.edu/')">Open</button>
+            <button onclick="addToCart('Artificial Intelligence', 22)">Add to Cart</button>
+        </div>
+
+        <div class="book">
+            <img src="edu5.jpg" alt="Book 5">
+            <h3>Calculus by Gilbert Strang - $10</h3>
+            <button onclick="openBook('https://ocw.mit.edu/resources/res-18-001-calculus-online-textbook-spring-2005/calculus.pdf')">Open</button>
+            <button onclick="addToCart('Calculus by Gilbert Strang', 14)">Add to Cart</button>
+        </div>
+
+        <div class="book">
+            <img src="edu6.jpg" alt="Book 6">
+            <h3>Data Structures and Algorithms - $18</h3>
+            <button onclick="openBook('https://opendatastructures.org/')">Open</button>
+            <button onclick="addToCart('Data Structures and Algorithms', 19)">Add to Cart</button>
+        </div>
+
+        <div class="book">
+            <img src="edu7.jpg" alt="Book 7">
+            <h3>Linear Algebra Done Right - $13</h3>
+            <button onclick="openBook('https://linear.axler.net/')">Open</button>
+            <button onclick="addToCart('Linear Algebra Done Right', 21)">Add to Cart</button>
+        </div>
+
+        <div class="book">
+            <img src="edu8.jpg" alt="Book 8">
+            <h3>Programming in C - $22</h3>
+            <button onclick="openBook('https://publications.gbdirect.co.uk/c_book/')">Open</button>
+            <button onclick="addToCart('Programming in C', 12)">Add to Cart</button>
+        </div>
+
+        <div class="book">
+            <img src="edu9.jpg" alt="Book 9">
+            <h3>Discrete Mathematics - $21</h3>
+            <button onclick="openBook('https://www.math.miami.edu/~ec/book/')">Open</button>
+            <button onclick="addToCart('Discrete Mathematics', 17)">Add to Cart</button>
+        </div>
+
+        <div class="book">
+            <img src="edu10.jpg" alt="Book 10">
+            <h3>Operating System Concepts - $20</h3>
+            <button onclick="openBook('https://pages.cs.wisc.edu/~remzi/OSTEP/')">Open</button>
+            <button onclick="addToCart('Operating System Concepts', 23)">Add to Cart</button>
+        </div>
+        </section>
+        <section class="books">
+
+        <h2>📖 Novels</h2>
+        <div class="book">
+            <img src="novel1.jpg" alt="Novel 1">
+            <h3>Pride and Prejudice - $12</h3>
+            <button onclick="openBook('https://www.gutenberg.org/files/1342/1342-h/1342-h.htm')">Open</button>
+            <button onclick="addToCart('Pride and Prejudice', 10)">Add to Cart</button>
+        </div>
+
+        <div class="book">
+            <img src="novel2.jpg" alt="Novel 2">
+            <h3>The Great Gatsby - $16</h3>
+            <button onclick="openBook('https://www.planetebook.com/free-ebooks/the-great-gatsby.pdf')">Open</button>
+            <button onclick="addToCart('The Great Gatsby', 12)">Add to Cart</button>
+        </div>
+
+        <div class="book">
+            <img src="novel3.jpg" alt="Novel 3">
+            <h3>Frankenstein - $18</h3>
+            <button onclick="openBook('https://www.gutenberg.org/files/84/84-h/84-h.htm')">Open</button>
+            <button onclick="addToCart('Frankenstein', 11)">Add to Cart</button>
+        </div>
+
+        <div class="book">
+            <img src="novel4.jpg" alt="Novel 4">
+            <h3>Dracula - $23</h3>
+            <button onclick="openBook('https://www.gutenberg.org/files/345/345-h/345-h.htm')">Open</button>
+            <button onclick="addToCart('Dracula', 13)">Add to Cart</button>
+        </div>
+
+        <div class="book">
+            <img src="novel5.jpg" alt="Novel 5">
+            <h3>Moby-Dick - $11</h3>
+            <button onclick="openBook('https://www.gutenberg.org/files/2701/2701-h/2701-h.htm')">Open</button>
+            <button onclick="addToCart('Moby-Dick', 15)">Add to Cart</button>
+        </div>
+
+        <div class="book">
+            <img src="novel6.jpg" alt="Novel 6">
+            <h3>The Picture of Dorian Gray - $26</h3>
+            <button onclick="openBook('https://www.gutenberg.org/files/174/174-h/174-h.htm')">Open</button>
+            <button onclick="addToCart('The Picture of Dorian Gray', 9)">Add to Cart</button>
+        </div>
+
+        <div class="book">
+            <img src="novel7.jpg" alt="Novel 7">
+            <h3>Crime and Punishment20 - $</h3>
+            <button onclick="openBook('https://www.gutenberg.org/files/2554/2554-h/2554-h.htm')">Open</button>
+            <button onclick="addToCart('Crime and Punishment', 16)">Add to Cart</button>
+        </div>
+
+    </section>
+    <section class="books">
+        <h2>🥋 Books on Past Fighters</h2>
+
+        <div class="book">
+            <img src="fighter1.jpg" alt="Fighter 1">
+            <h3>The Art of War - Sun Tzu - $19</h3>
+            <button onclick="openBook('https://www.gutenberg.org/files/132/132-h/132-h.htm')">Open</button>
+            <button onclick="addToCart('The Art of War', 10)">Add to Cart</button>
+        </div>
+
+        <div class="book">
+            <img src="fighter2.jpg" alt="Fighter 2">
+            <h3>Alexander the Great: His Life and Times - $21</h3>
+            <button onclick="openBook('https://archive.org/details/alexanderthegreat')">Open</button>
+            <button onclick="addToCart('Alexander the Great', 14)">Add to Cart</button>
+        </div>
+
+        <div class="book">
+            <img src="fighter3.jpg" alt="Fighter 3">
+            <h3>Genghis Khan and the Making of the Modern World - $9</h3>
+            <button onclick="openBook('https://archive.org/details/genghiskhan')">Open</button>
+            <button onclick="addToCart('Genghis Khan', 18)">Add to Cart</button>
+        </div>
+
+        <div class="book">
+    <img src="fighter4.jpg" alt="Fighter 4">
+    <h3>Spartacus and the Slave Wars - $23</h3>
+    <button onclick="openBook('https://archive.org/details/spartacus')">Open</button>
+    <button onclick="addToCart('Spartacus and the Slave Wars', 12)">Add to Cart</button>
+</div>
+
+<div class="book">
+    <img src="fighter5.jpg" alt="Fighter 5">
+    <h3>Napoleon: A Biography - $15</h3>
+    <button onclick="openBook('https://archive.org/details/napoleonbio')">Open</button>
+    <button onclick="addToCart('Napoleon: A Biography', 20)">Add to Cart</button>
+</div>
+
+<div class="book">
+    <img src="fighter6.jpg" alt="Fighter 6">
+    <h3>The Life of Julius Caesar - $12</h3>
+    <button onclick="openBook('https://www.gutenberg.org/files/10668/10668-h/10668-h.htm')">Open</button>
+    <button onclick="addToCart('The Life of Julius Caesar', 16)">Add to Cart</button>
+</div>
+
+<div class="book">
+    <img src="fighter7.jpg" alt="Fighter 7">
+    <h3>The Samurai: A History - $7</h3>
+    <button onclick="openBook('https://archive.org/details/samuraihistory')">Open</button>
+    <button onclick="addToCart('The Samurai: A History', 13)">Add to Cart</button>
+</div>
+
+<div class="book">
+    <img src="fighter8.jpg" alt="Fighter 8">
+    <h3>The Last Samurai: The Life and Battles of Saigo Takamori - $8</h3>
+    <button onclick="openBook('https://archive.org/details/lastsamurai')">Open</button>
+    <button onclick="addToCart('The Last Samurai', 15)">Add to Cart</button>
+</div>
+
+<div class="book">
+    <img src="fighter9.jpg" alt="Fighter 9">
+    <h3>Hannibal: One Man Against Rome - $29</h3>
+    <button onclick="openBook('https://archive.org/details/hannibalbio')">Open</button>
+    <button onclick="addToCart('Hannibal: One Man Against Rome', 17)">Add to Cart</button>
+</div>
+
+<div class="book">
+    <img src="fighter10.jpg" alt="Fighter 10">
+    <h3>The Legend of Miyamoto Musashi - $19</h3>
+    <button onclick="openBook('https://archive.org/details/musashi')">Open</button>
+    <button onclick="addToCart('The Legend of Miyamoto Musashi', 19)">Add to Cart</button>
+</div>
+</section>
+    <script src="script.js"></script>
+</body>
+</html>

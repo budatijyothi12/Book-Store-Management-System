@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <title>Payment - BookNest</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Complete Your Purchase</h1>
+    </header>
+    
+    <section class="payment">
+        <h2>Enter Payment Details</h2>
+
+        <label for="amount">Amount ($):</label>
+        <input type="number" id="amount" min="1" required><br>
+
+        <label for="discount-code">Discount Code:</label>
+        <input type="text" id="discount-code" placeholder="Enter code"><br>
+        <button onclick="applyDiscount()">Apply Discount</button><br><br>
+
+        <label for="card-name">Name on Card:</label>
+        <input type="text" id="card-name" required><br>
+
+        <label for="card-number">Card Number:</label>
+        <input type="text" id="card-number" maxlength="16" required><br>
+
+        <label for="expiry">Expiry Date (MM/YY):</label>
+        <input type="text" id="expiry" placeholder="MM/YY" maxlength="5" required><br>
+
+        <label for="cvv">CVV:</label>
+        <input type="password" id="cvv" maxlength="3" required><br>
+
+        <button onclick="completePayment()">Pay Now</button>
+    </section>
+
+    <script src="script1.js"></script>
+</body>
+</html>
